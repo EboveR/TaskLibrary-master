@@ -1,0 +1,18 @@
+# Built app
+.webpack
+node_modules/
+
+
+# Env files
+env.yml
+.env.local
+.env
+
+dist/
+data/
+.env.development
+.env.production
+.env.opensource
+.env.local
+
+yarn-error.log

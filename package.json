@@ -1,0 +1,49 @@
+{
+  "name": "taskslibrary",
+  "displayName": "TasksLibrary",
+  "description": "Library of tasks for CodeAlly.io",
+  "version": "0.1.0",
+  "publisher": "codeallyio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stroveio/TaskLibrary"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./index.js",
+  "type":"module",
+  "contributes": {},
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "yarn run lint",
+    "ioTask": "node -r dotenv/config index.js ioTask",
+    "repoTask": "node -r dotenv/config index.js repoTask"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^7.0.1",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.39.2",
+    "eslint": "^6.8.0",
+    "glob": "^7.1.6",
+    "mocha": "^7.0.1",
+    "vscode-test": "^1.3.0"
+  },
+  "dependencies": {
+    "@sentry/node": "5.17.0",
+    "apollo-fetch": "^0.7.0",
+    "apollo-link": "^1.2.14",
+    "apollo-link-ws": "^1.0.20",
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "graphql": "14.0.2",
+    "graphql-tag": "^2.10.3",
+    "node-fetch": "^2.6.0",
+    "subscriptions-transport-ws": "^0.9.16",
+    "ws": "^7.3.0"
+  }
+}

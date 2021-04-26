@@ -1,0 +1,33 @@
+module.exports = {
+  extends: ["plugin:prettier/recommended", "prettier"],
+  parser: "babel-eslint",
+  parserOptions: {
+    sourceType: "module",
+    allowImportExportEverywhere: false,
+    codeFrame: true,
+  },
+  env: {
+    node: true,
+    es6: true,
+  },
+  plugins: ["prettier"],
+  rules: {
+    quotes: [0, "single"],
+    semi: [2, "never"],
+    "comma-dangle": 0,
+    "consistent-return": 0,
+    "function-paren-newline": ["error", "never"],
+    "implicit-arrow-linebreak": ["off"],
+    "no-param-reassign": 0,
+    "no-underscore-dangle": 0,
+    "no-shadow": 0,
+    "no-console": 0,
+    "no-plusplus": 0,
+    "no-unused-expressions": 0,
+    "no-unused-vars": ["error", { argsIgnorePattern: "next" }],
+    "no-unused-expressions": 2,
+    "prettier/prettier": 2,
+    "function-paren-newline": 0,
+    "no-undef": 2,
+  },
+};
